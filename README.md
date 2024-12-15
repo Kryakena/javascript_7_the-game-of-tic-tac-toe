@@ -1,8 +1,14 @@
-# Игра "Крестики-нолики" на JavaScript
+# ⭕❌ Игра "Крестики-нолики" на JavaScript ❌⭕
 
 Источник: видео "Уроки по Javascript. 
 Делаем игру крестики-нолики на Javascript (Джаваскрипт)" 
 https://vk.com/im?sel=19460369&z=video-101965347_456257149%2Fabd2a1cc8485a453d4%2Fpl_post_-11899736_41573
+
+![2024-12-15_23-13-54](https://github.com/user-attachments/assets/5a8a2e45-ab1c-4038-a447-88c0425e00ca) ![2024-12-15_23-14-12](https://github.com/user-attachments/assets/e4fa0a56-b4e2-48e9-a8c8-27fdb328a231)
+
+
+https://github.com/user-attachments/assets/d5f76001-086d-48c2-9371-0edf14756af4
+
 
 1. Создать нужные файлы
 
@@ -80,7 +86,7 @@ https://vk.com/im?sel=19460369&z=video-101965347_456257149%2Fabd2a1cc8485a453d4%
     </div>
     </div>
     ```
-   
+
 7. в файле script.js пишем функцию, которая будет делать шаг
 
     ```JS
@@ -117,6 +123,9 @@ https://vk.com/im?sel=19460369&z=video-101965347_456257149%2Fabd2a1cc8485a453d4%
     //перезапуск игры последней строкой    
     }
     ```
+
+    ![9](https://github.com/user-attachments/assets/a2b04136-bfaf-4b41-a545-a946a6b76c69)
+
 
 10. в файле script.js cвязываем 2 функции reset и move, т.е. вызываем проверку окончания игры и в функции move 
 
@@ -219,6 +228,9 @@ border-color: red;
 }
 ```
 
+![2024-12-15_23-10-42](https://github.com/user-attachments/assets/1e93673b-400b-4324-949b-0dcf33644c55)
+
+
 2. файл script.js
 
 ```JS
@@ -256,6 +268,9 @@ function reset() {
 }
 ```
 
+![2024-12-15_23-10-59](https://github.com/user-attachments/assets/34f46b0e-cf63-4157-9486-35467c37787e)
+
+
 3. файл index.html
 
 ```html
@@ -284,3 +299,5 @@ function reset() {
 </body>
 </html>
 ```
+
+![2024-12-15_23-11-13](https://github.com/user-attachments/assets/fd940ddc-0874-435c-945c-a3a9274b33f5)
