@@ -2,14 +2,7 @@ var t = new Array(9);
 
 function ai() {
     var id = Math.floor(Math.random() * 9); //floor - округляем
-    t[id] ? ai[]: move(id, 'ai'); //проверка пустого места и переход на это пустое место
-}
-
-function move(id, role) {
-    if(t[id]) return false; //если место занято, то мы не шагаем
-    t[id] = role //кем занято это место
-    document.getElementById(id).className = 'cell' + role;
-    //в зависимости от кого был сделан шаг, вставляет соответствующую картинку
+    t[id] ? ai(): move(id, 'ai'); //проверка пустого места и переход на это пустое место
 }
 
 function checkEnd() {
@@ -23,6 +16,14 @@ function checkEnd() {
     if (t[2]=='ai' && t[4]=='ai' && t[6]=='ai' || t[2]=='player' && t[4]=='player' && t[6]=='player') return true;
     if (t[0] && t[1] && t[2] && t[3] && t[4] && t[5] && t[6] && t[7] && t[8]) return true;
     //перезапуск игры последней строкой
+}
+
+function move(id, role) {
+    if(t[id]) return false; //если место занято, то мы не шагаем
+    t[id] = role; //кем занято это место
+    document.getElementById(id).className = 'cell ' + role; //после cell поставить пробел в одинарных кавычках!!!
+    //в зависимости от кого был сделан шаг, вставляет соответствующую картинку
+    !checkEnd() ? (role == 'player') ? ai() : null : reset();
 }
 
 function reset() {

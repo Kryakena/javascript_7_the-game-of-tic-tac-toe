@@ -1,0 +1,32 @@
+body {
+    background-color: aqua;
+}
+
+.ai {
+    background-image: url("ai.jpg"); /*стиль нолика программы*/
+}
+
+.player {
+    background-image: url("player.jpg"); /*стиль крестика игрока*/
+}
+
+.actions {
+    text-align: center;
+}
+
+.container {
+    margin: 50px auto;
+    width: 300px;
+}
+
+.cell {
+    background-color: chartreuse;
+    border: 2px solid beige;
+    float: left; /*выравнивание по левому краю*/
+    height: 96px;
+    width: 96px;
+}
+
+.cell:hover {
+    border-color: red;
+}
